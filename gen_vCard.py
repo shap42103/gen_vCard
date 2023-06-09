@@ -19,7 +19,7 @@ try:
         return vcard
 
     # VCファイルを書き込む
-    with open(vcf_path, "w", encoding="shift_jis") as vcf_file:
+    with open(vcf_path, "w", encoding="utf-8") as vcf_file:
         for index, row in df.iterrows():
             vcard_string = generate_vcard(row)
             vcf_file.write(vcard_string)
