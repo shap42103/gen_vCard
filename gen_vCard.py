@@ -5,7 +5,7 @@ try:
     csv_path = "contacts.csv"
 
     today = datetime.date.today().strftime("%Y%m%d")
-    vcf_path = f"{today}_vcard.vcf"
+    vcf_path = f"./vCards/{today}_vcard.vcf"
 
     df = pd.read_csv(csv_path, encoding="utf-8")
 
